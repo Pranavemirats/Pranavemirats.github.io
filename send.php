@@ -15,7 +15,7 @@ subject : ". $subject . "\r\n
 Message : " . $message;
 
 
-$headers = "From: codeman" . "\r\n" .
+$headers = "From: Pranaveabp23@gmail.com" . "\r\n" .
 "CC: somebodyelse@example.com";
 
 if($email!=NULL){
@@ -24,8 +24,6 @@ if($email!=NULL){
 //redirect
 header("Location:thankyou.html");
 ?>
-
-
 
 
 
