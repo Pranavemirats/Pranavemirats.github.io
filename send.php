@@ -6,26 +6,24 @@ $email= $_POST['emailaddress'];
 $subject= $_POST['subject'];
 $message= $_POST['message'];
 
-$to = "Contact@agilensmart.com";
+$to = "pranavemirats@gmail.com";
 $subject = "Enquiry request from Contact-form";
 $txt =
 "Name   :". $name . "\r\n  
 Email   : " . $email . "\r\n  
-Phone : ". $subject . "\r\n
-Requirements : " . $message;
+subject : ". $subject . "\r\n
+Message : " . $message;
 
 
-$headers = "From: Contact@agilensmart.com" . "\r\n" .
+$headers = "From: Pranavemirats@gmail.com" . "\r\n" .
 "CC: somebodyelse@example.com";
 
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-header("Location:thankyou.html");
+header("Location:index.html");
 ?>
-
-
 
 
 
