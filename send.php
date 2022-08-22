@@ -15,15 +15,17 @@ subject : ". $subject . "\r\n
 Message : " . $message;
 
 
-$headers = "From: Pranavemirats@gmail.com" . "\r\n" .
+$headers = "From: codeman" . "\r\n" .
 "CC: somebodyelse@example.com";
 
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-header("Location:index.html");
+header("Location:thankyou.html");
 ?>
+
+
 
 
 
